@@ -116,19 +116,9 @@ def enter_room(room, room_access_permissions, items_collected):
     # If room permission not listed, default is we have permission to enter
     if room_access_permissions.get(outcome, {"locked" : False}).get('locked', False):
         print(f"{room_access_permissions[outcome]['message']}")
-        # This will unlock door but we don't want it here
-        # and it won't be outcome - it will be a different room
-        # when checking answer, look for unlocks_door property
-        # if it is there then if answer == whatever then unlock
-        # room_access_permissions[whatever]['locked'] = False
-        #room_access_permissions[outcome]['locked'] = False
-    
+
         sleep(1)
         return room # back to same room 
-
-    #print(f"Permission: {room_access_permissions[outcome]['locked']}")
-    
-    #sleep(1)
 
 
     # but need to check the file exists
