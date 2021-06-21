@@ -1,0 +1,11 @@
+{
+    "name": "finish",
+    "preamble": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ****** CONGRATULATIONS! ******",
+    "question": "The Danes have left! You are forever known as Aethelred the Great! Enter q to exit.\nP.S. You might want to leave a note for Harald to watch out for those pesky Normans...",
+    "type" : "text",
+    "choices" : {
+        " " : "game_over"
+        },
+    "delay" : 1,
+    "image" : "winner.png"
+}

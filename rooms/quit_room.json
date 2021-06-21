@@ -1,0 +1,10 @@
+{
+    "name": "quit_room",
+    "preamble": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ****** GAME OVER ******",
+    "question": "Press q to quit. Press 1 to return to enter to intro.",
+    "type" : "text",
+    "choices" : {
+        "1" : "intro"
+        },
+    "delay" : 1
+}

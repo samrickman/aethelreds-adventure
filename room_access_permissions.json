@@ -1,0 +1,16 @@
+{
+    "intro": {
+        "locked": false,
+        "message": "first room always open"
+    },
+    "silver_chest": {
+        "locked": true,
+        "message": "The chest is locked!",
+        "open_message" : "The key seems a familiar old silver... you have seen it before!"
+    }   
+    ,
+    "game_over": {
+        "locked": false,
+        "message": "the door is locked"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "dusty_palace_room",
+    "preamble": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ****** A room of choices... ******",
+    "question": "You enter a dusty palace room with three items. But which to choose? \nEnter choice number.",
+    "type" : "choices",
+    "choices" : {
+        "An old parchment" : "old_parchment", 
+        "A heavy chest with a silver lock" : "silver_chest",
+        "A long and winding staircase": "hundred_door_room"
+        },
+    "delay" : 1,
+    "image" : "castle.png"
+}

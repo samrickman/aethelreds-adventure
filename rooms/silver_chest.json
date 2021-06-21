@@ -1,0 +1,12 @@
+{
+    "name": "silver_chest",
+    "preamble": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ****** TREASURE ******",
+    "question": "You open the box. There is enough treasure in there to pay the Danes and still make you richer than Charlemagne! The law says that half of all found treasure belongs to the king, so it's lucky you found it. What now? \nEnter choice number.",
+    "type" : "choices",
+    "choices" : {
+        "Battle Danes" : "game_over", 
+        "Pay Danes on condition they never return" : "finish"
+        },
+    "delay" : 1,
+    "image" : "treasurechest.png"
+}

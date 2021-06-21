@@ -1,0 +1,16 @@
+{
+    "name": "old_parchment",
+    "preamble": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ****** The room of keys... ******",
+    "question": "Aethelred enters a room with three keys. He may pick one. \nEnter choice number.",
+    "type" : "choices",
+    "choices" : {
+        "Precious gold key" : "dusty_palace_room", 
+        "Old silver key" : "dusty_palace_room",
+        "Shiny bronze key": "dusty_palace_room"
+        },
+    "delay" : 1,
+    "image" : "keys.png",
+    "correct_choice" : "Old silver key",
+    "room_to_unlock" : "silver_chest"
+
+}

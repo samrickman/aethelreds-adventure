@@ -1,0 +1,12 @@
+{
+    "name": "game_over",
+    "preamble": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ****** GAME OVER ******",
+    "question": "Your ships were destroyed in a storm. The Danes are too numerous for you. England falls. Welcome to Daneland.",
+    "type" : "choices",
+    "choices" : {
+        "Start again" : "intro", 
+        "Quit" : "quit_room" 
+        },
+    "delay" : 1,
+    "image" : "sword.png"
+}

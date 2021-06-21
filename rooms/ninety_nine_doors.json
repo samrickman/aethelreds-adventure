@@ -1,0 +1,12 @@
+{
+    "name": "ninety_nine_doors",
+    "preamble": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ****** A room of doors... ******",
+    "question": "You enter a room of a thousand mirrors and a thousand doors. All but one are grey. Which one do you enter? \nEnter choice number.",
+    "type" : "choices",
+    "choices" : {
+        "Try some grey doors" : "dusty_palace_room", 
+        "The green door" : "three_keys"
+        },
+    "delay" : 1,
+    "image" : "door.png"
+}

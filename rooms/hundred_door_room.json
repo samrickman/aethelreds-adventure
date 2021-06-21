@@ -1,0 +1,13 @@
+{
+    "name": "hundred_door_room",
+    "preamble": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ****** A room of doors... ******",
+    "question": "You enter a room of a thousand mirrors and a thousand doors. All are grey. Which one do you enter? \nEnter choice number.",
+    "type" : "choices",
+    "choices" : {
+        "Door 1" : "dusty_palace_room", 
+        "A random door" : "dusty_palace_room",
+        "Door 42" : "dusty_palace_room"
+        },
+    "delay" : 1,
+    "image" : "door.png"
+}

@@ -1,0 +1,12 @@
+{
+    "name": "game_over_barons",
+    "preamble": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ****** GAME OVER ******",
+    "question": "While you have civil war with the Barons, the Danes invade. England falls. Welcome to Daneland.",
+    "type" : "choices",
+    "choices" : {
+        "Start again" : "intro", 
+        "Quit" : "quit_room" 
+        },
+    "delay" : 1,
+    "image" : "shield.png"
+}

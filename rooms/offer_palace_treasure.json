@@ -1,0 +1,13 @@
+{
+    "name": "offer_palace_treasure",
+    "preamble": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ****** Offer all treasure in palace ******",
+    "question": "You present all your treasure on bended-knee. The Danish Jarl Cnut Longsword scoffs at your paltry offer and refuses to leave. \nEnter choice number.",
+    "type" : "choices",
+    "choices" : {
+        "Battle Danes" : "game_over", 
+        "Raise taxes from Barons" : "king_too_weak",
+        "Search for secret treasure" : "dusty_palace_room" 
+        },
+    "delay" : 1,
+    "image" : "jewels.png"
+}

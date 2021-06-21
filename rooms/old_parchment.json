@@ -1,0 +1,13 @@
+{
+    "name": "old_parchment",
+    "preamble": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ****** An old parchment... ******",
+    "question": "The parchment is moth-eaten, and some words are missing, eaten by mould or faded. \nIt has appeared from the future. \nIt says, 'Aethelred the ________ was king from 978 - 1013. What is the missing word?' \nEnter choice number.",
+    "type" : "choices",
+    "choices" : {
+        "unlucky" : "dusty_palace_room", 
+        "unready" : "ninety_nine_doors",
+        "unsteady": "dusty_palace_room"
+        },
+    "delay" : 1,
+    "image" : "scroll.png"
+}
