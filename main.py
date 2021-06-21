@@ -4,7 +4,6 @@ import json
 import colorama
 import os
 from imgviewer import show_image
-import random
 
 with open("rooms/intro.json", "r") as f:
     intro = json.load(f)
