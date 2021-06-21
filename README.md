@@ -14,10 +14,13 @@ The schema folder also contains a script that will draw a network map generated 
 
 ## How to play online
 
-Go to:
+Go to: https://samrickman.github.io/aethelred/
 
+Note: This is a terminal in a virtual machine. It might take about thirty seconds to load the first time you play it. Downloading and running locally is easier.
 
 ## How to run locally
+
+### Installation 
 
 To run, you will need to have Python (3.7+), [pip](https://pip.pypa.io/en/stable/installing/), [virtualenv](https://pypi.org/project/virtualenv/) and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed. 
 
@@ -44,6 +47,15 @@ This should enter the game. Once you leave, don't forget to deactivate the virtu
 ```
 deactivate venv
 ```
+
+### Running
+
+Once you have installed once, you should just be able to run by navigating to the folder in a terminal and typing:
+
+```
+python main.py
+```
+
 
 ## How it works / how to modify
 
