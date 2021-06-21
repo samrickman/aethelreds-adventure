@@ -89,9 +89,6 @@ def enter_room(room, room_access_permissions, items_collected):
 
     delay(room)
 
-    #colorama.deinit()    
-    #colorama.reinit()
-
     choices_dict, answer = print_choices(room)
     
     # Look up answer
@@ -105,14 +102,13 @@ def enter_room(room, room_access_permissions, items_collected):
         print_wrong_answer()
         return room # back to same room
     
-    
     # If we get here we have the right answer
 
     # Check if right answer opens another room
     unlock_room(room, room_access_permissions)
 
     # Check if we have permission to enter room
-    #print(outcome)
+
     # If room permission not listed, default is we have permission to enter
     if room_access_permissions.get(outcome, {"locked" : False}).get('locked', False):
         print(f"{room_access_permissions[outcome]['message']}")
@@ -120,7 +116,7 @@ def enter_room(room, room_access_permissions, items_collected):
         sleep(1)
         return room # back to same room 
 
-
+    # If here, we progress! 
     # but need to check the file exists
     room_file = f"rooms/{outcome}.json"
     if os.path.exists(room_file):
@@ -140,13 +136,16 @@ def main():
 
     if __name__ == "__main__":
 
+        # Open game data
         with open("room_access_permissions.json", "r") as f:
             room_access_permissions = json.load(f)
-
         with open("items_collected.json", "r") as f:
             items_collected = json.load(f)  
 
+        # Load intro room
         next_room = enter_room(intro, room_access_permissions, items_collected)
+        
+        # Main game loop
         while True:
             next_room = enter_room(next_room, room_access_permissions, items_collected)
 

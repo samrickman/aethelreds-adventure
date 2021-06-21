@@ -1,6 +1,6 @@
 {
     "name": "intro",
-    "preamble": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ****** AETHELRED'S ADVENTURE ******",
+    "preamble": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ****** AETHELRED'S ADVENTURE - by Frida and Sam ******",
     "question": "Aethelred is in the palace. He is visited by the Danish ambassador, Jarl Cnut Longsword. The Danes demand money to leave England. They are very strong. \nEnter choice number.\nEnter q to quit at any time.",
     "type" : "choices",
     "choices" : {
