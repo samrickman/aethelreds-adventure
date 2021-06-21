@@ -1,12 +1,12 @@
 # Aethelred's adventure
 
-This is a tiny little text-based RPG I made with my 6 year old daughter. The story and many of the design choices were hers (e.g. the flaming blue horse representing tax collection).
+This is a tiny little text-based RPG my 6 year old daughter and I made together. The story and many of the design choices were hers (e.g. the flaming blue horse representing the King's tax collectors).
 
 ![Aethelred's Adventure](https://raw.githubusercontent.com/samrickman/aethelreds-adventure/main/img/demo.png)
 
 Features:
 
-1. Highly pixellated images (60x30) - thanks [Nikhil Kumar Singh]( https://github.com/nikhilkumarsingh/terminal-image-viewer/blob/master/img-viewer.py).
+1. Colored spaces giving the appearance of highly pixellated images (60x30).
 2. Multiple choice or text responses.
 3. Locked rooms until a condition is met (e.g. item collected or correct answer given in another room).
 
@@ -17,6 +17,8 @@ The schema folder also contains a script that will draw a network map generated 
 Go to: https://samrickman.github.io/aethelred/
 
 Note: This is a terminal in a virtual machine. It might take about thirty seconds to load the first time you play it. Downloading and running locally is easier.
+
+If it does not start automatically (even after some text appears), click the green Play button in the bottom-right hand corner.
 
 ## How to run locally
 
