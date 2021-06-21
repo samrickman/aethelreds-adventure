@@ -1,6 +1,6 @@
 {
     "name": "king_too_weak",
-    "preamble": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ****** Aetherland demands taxes! ******",
+    "preamble": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ****** Aethelred demands taxes! ******",
     "question": "Your tax collectors visit your Lords and Barons. They refuse to pay money to the Danes or you. \nEnter choice number.",
     "type" : "choices",
     "choices" : {
