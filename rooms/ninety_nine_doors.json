@@ -8,5 +8,5 @@
         "The green door" : "three_keys"
         },
     "delay" : 1,
-    "image" : "door.png"
+    "image" : "greendoor.png"
 }
