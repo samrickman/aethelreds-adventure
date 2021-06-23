@@ -42,8 +42,9 @@ def check_answer(room, answer, choices_dict):
         try:
             answer = int(answer)
         except ValueError:
-            print("Invalid response")
-        
+            print(colorama.Back.RED + "Answer must be numeric" + colorama.Style.RESET_ALL)
+
+
         if answer in choices_dict.keys():
             answer = choices_dict[answer]
 
