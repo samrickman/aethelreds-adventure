@@ -5,19 +5,17 @@ import colorama
 import os
 from imgviewer import show_image
 
-with open("rooms/intro.json", "r") as f:
-    intro = json.load(f)
 
-def print_preamble(room, color = colorama.Fore.CYAN):
-    print(color + room['preamble'])
-    print(colorama.Style.RESET_ALL)
-
-def print_question(room, color = colorama.Fore.LIGHTBLUE_EX):
-    print(color + room['question'])
-    print(colorama.Style.RESET_ALL)
-    image = room.get("image", None)
-    if image:
-        show_image(f"img/{image}")
+def pretty_print(room, type = ["preamble", "question"]):
+    if type == "preamble":
+        print(colorama.Fore.CYAN + room['preamble'])
+        print(colorama.Style.RESET_ALL)
+    elif type == "question":
+        print(colorama.Fore.LIGHTBLUE_EX + room['question'])
+        print(colorama.Style.RESET_ALL)
+        image = room.get("image", None)
+        if image:
+            show_image(f"img/{image}")
 
 def delay(room):
     delay = room.get('delay', 0)
@@ -83,9 +81,9 @@ def enter_room(room, room_access_permissions, items_collected):
     Function that takes a room as an input
     """
 
-    print_preamble(room)
+    pretty_print(room, "preamble")
 
-    print_question(room)    
+    pretty_print(room, "question")    
 
     delay(room)
 
@@ -137,6 +135,8 @@ def main():
     if __name__ == "__main__":
 
         # Open game data
+        with open("rooms/intro.json", "r") as f:
+            intro = json.load(f)
         with open("room_access_permissions.json", "r") as f:
             room_access_permissions = json.load(f)
         with open("items_collected.json", "r") as f:
