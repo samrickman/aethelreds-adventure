@@ -16,8 +16,7 @@ labels = {}
 for file in files:
     with open(f"{room_dir}{file}", "r") as f:
         room = json.load(f)
-        #if room['type'] != 'choices':
-        #    next
+
     choices = room['choices']
     room_edges = [(room['name'], choice) for choice in choices.values()]
     
