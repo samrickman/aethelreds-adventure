@@ -14,11 +14,9 @@ The schema folder also contains a script that will draw a network map generated 
 
 ## How to play online
 
-Go to: https://samrickman.github.io/aethelred/
+The game is hosted [here](https://aethelreds-adventure-production.up.railway.app/) using [Railway](https://railway.com/). 
 
 Note: This is a terminal in a virtual machine. It might take about thirty seconds to load the first time you play it. Downloading and running locally is easier if you wish to play regularly (...).
-
-If it does not start automatically (even after some text appears), click the green Play button in the bottom-right hand corner.
 
 ## How to run locally
 
