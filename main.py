@@ -86,7 +86,7 @@ def enter_room(room, room_access_permissions, items_collected):
 
     pretty_print(room, "question")    
 
-    delay(room)
+    delay(room) 
 
     choices_dict, answer = print_choices(room)
     

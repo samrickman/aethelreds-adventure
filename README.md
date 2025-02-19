@@ -24,35 +24,36 @@ If it does not start automatically (even after some text appears), click the gre
 
 ### Installation 
 
-To run, you will need to have [Python (3.7+)](https://www.python.org/downloads/), [pip](https://pip.pypa.io/en/stable/installing/), [virtualenv](https://pypi.org/project/virtualenv/) and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed. 
+To run, you will need to have [Python (3.12+)](https://www.python.org/downloads/), [pip](https://pip.pypa.io/en/stable/installing/), [virtualenv](https://pypi.org/project/virtualenv/) and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed. 
 
 Once this is done, open a terminal to the folder you want to download the game to and:
 
 On Windows:
 ```
 git clone https://github.com/samrickman/aethelreds-adventure
+cd .\aethelreds-adventure\
+python -m venv venv
 .\venv\Scripts\activate
 pip install -r .\requirements.txt
 python main.py
 ```
 
-On Mac/Linux:
+On Linux/Mac:
+
 ```
 git clone https://github.com/samrickman/aethelreds-adventure
+cd aethelreds-adventure/
+python -m venv venv
 source venv/bin/activate
 pip install -r .\requirements.txt
 python main.py
 ```
 
-This should enter the game. Once you leave, don't forget to deactivate the virtual environment (or just close the window):
-
-```
-deactivate venv
-```
+This should enter the game.
 
 ### Running
 
-Once you have installed once, you should just be able to run by navigating to the folder in a terminal and typing:
+Once you have installed once, you should just be able to run by navigating to the folder in a terminal, activating the virtual environment (either `.\venv\Scripts\activate` on Windows or `` on Linux/Mac) and typing:
 
 ```
 python main.py
@@ -63,18 +64,15 @@ python main.py
 
 This is a simple game. 
 
-The images are generated to text in imgviewer.py.
+The images are generated to text in `imgviewer.py`.
+The rooms are `json` files in the `/rooms` folder. 
 
-The only other logic happens in main.py, which reads in the room json files, prints the options, and then enters the next room depending which option the user selected.
+The only other logic happens in `main.py`, which reads in the room `json` files, prints the options, and then enters the next room based on the option the user selected.
 
-The rooms are json files in the /rooms folder. 
+To extend the game, as long as you have an intro room called `intro.json`, you can delete everything else, and change the options accordingly.
 
-As long as you have an intro room called "intro.json", you can delete everything else, and change the options accordingly.
+If your room does not have an image, set the following property in the room `json` file:
 
-If your room does not have an image, set the "image" property to _false_ (no quotes).
-
-# TODO:
-
-This is not a very complex game and it is not a very good story. It was just fun to do with a child.
-
-Now there is a basic game, I suspect we will make the story more complex, and less nonsensical over time.
+```
+"image" : false
+```
